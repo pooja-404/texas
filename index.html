@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas RoadHouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        .box {
+            max-width: 640px;
+            background: #EDEDED;
+            box-shadow: 0px 4px 3px 0px rgba(89, 40, 229, 0.07);
+        }
+
+        .container {
+            max-width: 587px;
+            padding-left: 12px;
+            padding-right: 12px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .bg-image {
+            background-image: url("https://i.ibb.co/XfnNsBj/imbbox.png");
+            background-size: cover;
+        }
+
+
+        .bg-image2 {
+            background-image: url("https://i.ibb.co/GHtFXG3/bg-3.png");
+            background-size: cover;
+        }
+
+        .bg-image3 {
+            background-image: url("https://i.ibb.co/wMtJ4xr/grybox.png");
+            background-size: cover;
+        }
+
+        .bg-image4 {
+            background-image: url("https://i.ibb.co/NFq0bT3/grybox2.png");
+            background-size: cover;
+        }
+
+
+        /* font-family */
+        .ff-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* font-weighgt */
+        .fw-400 {
+            font-weight: 400;
+        }
+
+        .fw-500 {
+            font-weight: 500;
+        }
+
+        .fw-700 {
+            font-weight: 700;
+        }
+
+        /* font-size */
+
+        .fs-40 {
+            font-size: 40px;
+        }
+
+        .fs-16 {
+            font-size: 16px;
+        }
+
+        .fs-24 {
+            font-size: 24px;
+        }
+
+        .fs-28 {
+            font-size: 28px;
+        }
+
+        .fs-12 {
+            font-size: 12px;
+        }
+
+        /* line-height */
+
+        .lh-114 {
+            line-height: 114%;
+        }
+
+        .lh-165 {
+            line-height: 165%;
+        }
+
+        /* color */
+        .text-black {
+            color: #000;
+        }
+
+        .bg-gry {
+            background: rgba(245, 247, 246, 1);
+
+        }
+
+        .color-black {
+            color: #191919;
+        }
+
+        .text-darkgry {
+            color: #321e03;
+        }
+
+        .bg-white {
+            background: #fff;
+        }
+
+        .color-black {
+            color: rgba(25, 25, 25, 1);
+        }
+
+        .text-darkred {
+            color: rgba(153, 26, 54, 1);
+        }
+
+        .text-gry {
+            color: #777777;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bg-darkgry {
+            background: rgba(237, 237, 237, 1);
+        }
+
+        .mb-0 {
+            margin-bottom: 0;
+        }
+
+        .m-w-512 {
+            max-width: 512px;
+        }
+
+        .m-w-365 {
+            max-width: 365px;
+
+        }
+
+        .m-w-386 {
+            max-width: 386px;
+        }
+
+        .m-w-430 {
+            max-width: 430px;
+
+        }
+
+        .mt-50 {
+            margin-top: 50px;
+        }
+
+        .py-35 {
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+
+        .py-20 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .pt-35 {
+            padding-top: 35px;
+        }
+
+        .py-33 {
+            padding-top: 33px;
+            padding-bottom: 33px;
+        }
+
+        .py-35 {
+            padding-top: 35px;
+            padding-bottom: 35px;
+        }
+
+        .py-20 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .pt-35 {
+            padding-top: 35px;
+        }
+
+        .pb-20 {
+            padding-bottom: 20px;
+        }
+
+        .pb-205 {
+            padding-bottom: 205px;
+        }
+
+        .pt-72 {
+            padding-top: 72px;
+        }
+
+        .pl-35 {
+            padding-left: 35px;
+        }
+
+        .pl-47 {
+            padding-left: 47px;
+        }
+
+        .pr-37 {
+            padding-right: 37px;
+        }
+
+        .mb-0 {
+            margin-bottom: 0;
+        }
+
+        .mt-20 {
+            margin-top: 20px;
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        .menu-button {
+            border-radius: 6px;
+            border: 1px solid #000;
+            background: #E9BC02;
+            padding: 19px 55px 19px 46px;
+            cursor: pointer;
+        }
+
+        .border-radius-18 {
+            border-radius: 18px;
+        }
+
+        .menu-button:hover {
+            background: #fff;
+        }
+
+        .height {
+            height: 207px;
+        }
+
+        .height-218 {
+            height: 218px;
+        }
+
+        .text-decoration {
+            text-decoration: underline;
+        }
+
+        .text-decoration-none {
+            text-decoration: none;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="mb-0">
+    <div class="box border-radius-18 mx-auto mb-20">
+        <div class="container bg-image  pb-205 mx-auto pl-47 pr-37 ">
+            <img src="https://i.ibb.co/T0rD50p/logo.png" alt="logo" class="pt-35">
+            <h2 class="ff-poppins fw-400 fs-40 lh-114 text-black m-w-512">THANK YOU FOR JOINING OUR <span
+                    class="fw-700 fs-40 lh-114 text-darkred">WAITLIST</span></h2>
+            <p class="ff-poppins fw-400 fs-16 lh-165 color-black m-w-365">Be on the lookout for a text with your
+                check-in
+                instructions.</p>
+            <button class="ff-poppins fs-16 text-center fw-700 menu-button text-black mt-50">See Our Menu</button>
+        </div>
+        <div>
+            <div class="container bg-white border-radius-18 pt-35 pb-20 mt-20">
+                <h2 class="ff-poppins fs-28 fw-500 text-center text-darkred lh-165">CLARKSVILLE, IN</h2>
+                <p class="ff-poppins fw-700 fs-24 lh-165 text-center text-black">Table for 2 at 04:06 PM</p>
+                <p class="ff-poppins fs-16 fw-400 lh-165 text-gry text-center">Name: Test, Test</p>
+                <p class="ff-poppins fs-16 fw-400 lh-165 text-gry text-center">Confirmation #: 8235</p>
+                <p class="ff-poppins fs-16 fw-400 lh-114 text-darkred text-center">0 high chair required</p>
+                <p class="ff-poppins fs-16 fw-400 lh-165 text-center text-black">Ph: 5023201101</p>
+
+                <div class="bg-image3  border-radius-18 mx-auto height-218 mt-50">
+                    <p class="ff-poppins fs-16 fw-400 lh-165 text-center color-black m-w-430 mx-auto  pt-72">Keep in
+                        mind,
+                        this
+                        is not a
+                        reservation and as
+                        a courtesy to other guests, please don’t check in until your entire party
+                        is at the restaurant.</p>
+
+                </div>
+                <div class="bg-image4  border-radius-18 mx-auto mt-20 height-218 ">
+                    <p class="ff-poppins fs-16 fw-400 lh-165 text-center color-black m-w-430 mx-auto pt-72">If you need
+                        to
+                        cancel, or don’t receive your check-in instructions, please call the restaurant.
+                    </p>
+
+                </div>
+                <div class="bg-image2 border-radius-18 height pl-35 py-20 mt-20">
+                    <p class="ff-poppins fs-24 fw-700 lh-165 ">Review this store</p>
+                    <p class="ff-poppins fs-16 fw-400 lh-165 text-darkgry m-w-386 ">Share your thoughts on your order
+                        with fellow customers
+                        and Queen of Sheba.</p>
+                </div>
+            </div>
+            <footer class="bg-gry py-35 mt-50">
+                <div class="container">
+                    <p class="ff-poppins fw-400 lh-165 fs-12  text-white text-center text-darkred"> <span
+                            class="text-decoration">375
+                            Alabama
+                            Street suite
+                            200. San
+                            Francisco,
+                            California 94110</span> <span
+                            class="ff-poppins fw-400 fs-12 lh-165 text-gry text-decoration-none ">Ph:
+                            (888)
+                            458-5376</span></p>
+                    <p class="ff-poppins fs-12 fw-400 lh-165 text-gry text-center text-decoration">Unsubscribe from
+                        this list</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
